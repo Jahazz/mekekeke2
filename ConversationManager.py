@@ -25,7 +25,7 @@ class ConversationManager:
         conversation_id = str(conversation.id)
         conversation_end_time = str(conversation.conversation_end_time)
         query = "UPDATE Conversations SET `end_time` = '"+conversation_end_time+"', `end_reason` = '"+reason+"' WHERE conversation_id = '"+conversation_id+"';"
-        self.database.execute_query(query)
+        self.database.insert_query(query)
 
     def log_new_conversation(self,conversation):
         conversation_id = str(conversation.id)

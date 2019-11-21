@@ -1,6 +1,4 @@
-from chatterbot import ChatBot
-import chatterbot
-from chatterbot.trainers import ListTrainer
+
 
 from ConversationManager import ConversationManager
 
